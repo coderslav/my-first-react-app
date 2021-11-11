@@ -1,16 +1,16 @@
 import React from "react";
 import '@styles/App.css';
+import Main from "@components/Main.js";
 import Header from "@components/Header.js";
 
 
 function App() {
+    const buttonName = 'Some button name YEAH';
     return (
+        // Элемент React.Fragment можно записать и короткой формой: <></>
         <React.Fragment>
-            <Header/>
-            <div className='App'>
-                Этот текстик над синим текстиком
-                <h1>Тут какой то тоже текстик...</h1>
-            </div>
+            <Header buttonNameProp = {buttonName} />
+            <Main />
         </React.Fragment>
     );
 }
